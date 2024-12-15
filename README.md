@@ -28,5 +28,5 @@ Welcome to this collection of **free email templates** for e-commerce. Whether l
 ---
 
 ## 🚀 How to Use
-1. Clone or download the repository:
+1. Clone or download the repository
 
