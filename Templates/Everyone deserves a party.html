@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<!--
+  Simple E-commerce email template
+  ---------------------------------------
+  Ehilà! It's Tiziana here :D 
+  This is a responsive, clean, and simple layout for an e-commerce email, designed to showcase offers.
+
+  Features:
+  - Responsive grid layout for displaying product cards
+  - Includes placeholders for product images and buttons
+  - Easily customizable for any e-commerce brand or marketing campaign
+
+  How to Use:
+  1. Replace the placeholder images (`<img src="placeholder.png">`) with your product images. These images must be 150x150 px
+  2. Customize the text (e.g., 'Make it yours') with your actual product details or calls to action that you prefer
+  3. Feel free to modify the colors, fonts, or other styles to suit your branding! 
+
+  License:
+  This template is open-source and free to use for anyone looking to create responsive e-commerce emails. 
+  Feel free to fork, modify, and contribute!
+
+  Happy coding and building
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrate with us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            background-color: #F5F5F5; 
+        }
+
+        /* Container section */
+        .email-container {
+            max-width: 600px; 
+            margin: 0 auto;
+            background-color: #EDEDED; 
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Logo section */
+        .logo {
+            background-color: #a6a6a6; 
+            padding: 15px 0;
+            border-radius: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #374045;
+            width: 180px;
+            margin: 0 auto 20px;
+        }
+
+        /* Main heading styles */
+        h1 {
+            font-size: 24px;
+            color: #374045;
+            margin: 10px 0;
+        }
+
+        /* Subheading styles */
+        h2 {
+            font-size: 20px;
+            color: #374045;
+            margin: 4px 0;
+            font-weight: normal;
+        }
+
+        /* Secondary text */
+        p {
+            font-size: 18px;
+            color: #374045;
+            margin: 10px 0 20px;
+        }
+
+        /* Button styles */
+        .cta-button {
+            display: inline-block;
+            background-color: #4A90E2; 
+            color: #FAF5F0;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 25px;
+            margin-bottom: 12px;
+        }
+
+        /* Grid section styles */
+        .grid-section h3 {
+            font-size: 20px;
+            color: #374045;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10x;
+        }
+
+        .grid-item {
+            width: 32%;
+            background-color: #E8E8E8;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            border-bottom: 1px solid #CCCCCC;
+        }
+
+        .grid-button {
+            display: block;
+            background-color: #4A90E2;
+            color: #FAF5F0;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 8px 8px 8px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        /* Footer styles */
+        .footer {
+            font-size: 12px;
+            color: #374045;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Logo -->
+        <div class="logo">YOUR LOGO</div>
+
+        <!-- Headline -->
+        <h1>Celebrate your birthday with us</h1>
+        <h2>Oh, it’s not your birthday? Who cares?</h2>
+        <p>We’ve got sales every single day because everyone deserves a party! ✨</p>
+
+        <!-- CTA Button -->
+        <a href="#" class="cta-button">CELEBRATE TODAY</a>
+
+        <!-- Grid Section -->
+        <div class="grid-section">
+            <h3>Here’s one of our best deals for you</h3>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/150" alt="Deal 1">
+                    <a href="#" class="grid-button">Make it yours</a>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/150" alt="Deal 2">
+                    <a href="#" class="grid-button">Make it yours</a>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/150" alt="Deal 3">
+                    <a href="#" class="grid-button">Make it yours</a>
+                </div>
+            </div>
+            <p>Discover even more amazing offers on our <a href="https://www.example.com" style="color: #007BFF;">website</a>. 
+            </p>
+        </div>
+
+<!-- Footer -->
+<div class="footer">
+    <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+    If you no longer wish to receive emails from us, <a href="https://www.example.com/unsubscribe" style="color: #007BFF;">click here to unsubscribe</a>.
+    Your Company Name | Address: 1234 Street, City, Country | Phone: +123 456 7890
+     2024 Your Company Name. All rights reserved.
+    Follow us on:
+        <a href="https://www.facebook.com/yourpage" style="color: #007BFF;">Facebook</a> |
+        <a href="https://www.twitter.com/yourpage" style="color: #007BFF;">Twitter</a> |
+        <a href="https://www.instagram.com/yourpage" style="color: #007BFF;">Instagram</a>
+</div>
+
+</body>
+</html>

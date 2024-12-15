@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!--
+  Simple Beauty E-commerce email template
+  ---------------------------------------
+  Ehilà! It's Tiziana here :D 
+  This is a responsive, clean, and simple layout for an e-commerce email, designed to showcase offers.
+
+  Features:
+  - Responsive layout for displaying product features
+  - Includes product list images and buttons
+  - Easily customizable for any e-commerce brand or marketing campaign
+
+  How to Use:
+  1. Replace the placeholder images (`<img src="placeholder.png">`) with your images
+  2. Customize the text with your actual product details or calls to action that you prefer
+  3. Feel free to modify the colors, fonts, or other styles to suit your branding! 
+
+  License:
+  This template is open-source and free to use for anyone looking to create responsive e-commerce emails. 
+  Feel free to fork, modify, and contribute!
+
+  Happy coding and building
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fdf9f6;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fbe3d4;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+            color: #333;
+            letter-spacing: 1px;
+        }
+
+        .promo {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+            background-color: #fbe3d4;
+        }
+
+        .promo-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .promo h1 {
+            font-size: 50px;
+            margin: 0;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .promo h2 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+            font-weight: normal;
+        }
+
+        .promo p {
+            font-size: 14px;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .promo .code {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .promo .button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 30px;
+            background-color: #f0856b;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 25px;
+        }
+
+        .promo .expiry {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .promo-image {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .promo-image img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+
+        .products {
+    text-align: center;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+}
+
+.products h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.product {
+    width: 30%;
+    text-align: center;
+    background-color: #fbe3d4;
+    clip-path: ellipse(50% 80% at 50% 80%); /* Semi-circle clip */
+    border-radius: 15px;
+    padding: 20px 10px;
+    position: relative;
+}
+
+.image-container {
+    width: 100%;
+    aspect-ratio: 1 / 0.6; /* Ensure the container remains a square */
+    position: relative;
+    overflow: hidden;
+    clip-path: ellipse(50% 80% at 50% 80%); /* Semi-circle clip */
+    background-color: #fceae5;
+    margin-bottom: 5px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f0856b;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+        .cta {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .cta a {
+            text-decoration: none;
+            background-color: #f0856b;
+            color: white;
+            padding: 12px 40px;
+            font-size: 16px;
+            border-radius: 25px;
+            display: inline-block;
+        }
+
+        .reviews {
+            padding: 20px;
+        }
+
+        .review {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .review img {
+            width: 80px;
+            height: 60px;
+            margin-top: 10px;
+            display: flex;
+            clip-path: ellipse(50% 80% at 50% 80%); /* Semi-circle clip */
+        }
+
+        .review-content {
+            flex: 1;
+        }
+
+        .review-content h4 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .review-content p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        .review-content .stars {
+            color: #f0856b;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="header">
+            <h1>YOUR LOGO</h1>
+        </div>
+
+        <div class="promo">
+            <div class="promo-text">
+                <h1>50%</h1>
+                <h2>OFF FOR YOU</h2>
+                <p>Use this promo code</p>
+                <div class="code">ABCD#123</div>
+                <a href="#" class="button">SHOP NOW</a>
+                <p class="expiry">Only until the end of this week!</p>
+            </div>
+            <div class="promo-image">
+                <img src="https://via.placeholder.com/250x250" alt="Hero Image">
+            </div>
+        </div>
+
+        <div class="products">
+            <h3>Glow like never before - clearance prices are here!</h3>
+            <div class="product-list">
+                <div class="product">
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/100" alt="Serum">
+                    </div>
+                    <p>SERUM</p>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/100" alt="Eye Cream">
+                    </div>
+                    <p>EYE CREAM</p>
+                </div>
+                <div class="product">
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/100" alt="Face Wash">
+                    </div>
+                    <p>FACE WASH</p>
+                </div>
+            </div>
+            <button class="cta-button">DON'T MISS IT</button>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #f0856b; width: 60%; margin: 20px auto;">
+        <div class="reviews">
+            <div class="review">
+                <img src="https://via.placeholder.com/80" alt="Juliana Silva">
+                <div class="review-content">
+                    <h4>First name Last name</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+            </div>
+            <div class="review">
+                <img src="https://via.placeholder.com/80" alt="Juliana Silva">
+                <div class="review-content">
+                    <h4>First name Last name</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="stars">★★★★★</p>
+                </div>
+            </div>
+        </div>
+
+<!-- Footer -->
+<div class="footer">
+    <hr style="border: 0; border-top: 1px solid #f0856b; width: 60%; margin: 10px auto;">
+    If you no longer wish to receive emails from us, <a href="https://www.example.com/unsubscribe" style="color: #007BFF;">click here to unsubscribe</a>.
+    Your Company Name | Address: 1234 Street, City, Country | Phone: +123 456 7890
+     2024 Your Company Name. All rights reserved.
+    Follow us on:
+        <a href="https://www.facebook.com/yourpage" style="color: #007BFF;">Facebook</a> |
+        <a href="https://www.twitter.com/yourpage" style="color: #007BFF;">Twitter</a> |
+        <a href="https://www.instagram.com/yourpage" style="color: #007BFF;">Instagram</a>
+</div>
+</body>
+</html>
