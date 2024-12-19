@@ -7,7 +7,7 @@
 
   Features:
   - Responsive layout for displaying product features
-  - Includes carrousel for product images and buttons
+  - Includes grid for product images and buttons
   - Easily customizable for any e-commerce brand or marketing campaign
 
   How to Use:
@@ -20,271 +20,142 @@
   Feel free to fork, modify, and contribute!
 
   Happy coding and building
--->
+--><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-        }
-        .email-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        /* Logo */        
-        .logo {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        /* Hero */
-        .hero {
-            text-align: center;
-        }
-        .hero img {
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        /* Headline */
-        .headline {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .headline h1 {
-            font-size: 24px;
-            margin: 0;
-        }
-        .headline p {
-            font-size: 16px;
-            color: #555;
-        }
-        /* CTA */
-        .cta {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .cta a {
-            text-decoration: none;
-            border: 2px solid #000;
-            padding: 10px 20px;
-            color: #000;
-            font-size: 14px;
-            display: inline-block;
-            border-radius: 25px;
-        }
-        /* Features */
-        .features {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .features p {
-            font-size: 12px;
-            color: #555;
-        }
-        .features img {
-            width: 40px;
-            height: 40px;
-        }
-        .features div {
-            display: inline-block;
-            margin: 0 10px;
-            text-align: center;
-        }
-        /* Models */
-        .models {
-            display: flex;
-            justify-content: space-between;
-            margin: 30px 0;
-        }
-        .model {
-            width: 48%;
-            text-align: center;
-        }
-        .model h2 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-        .model p {
-            font-size: 14px;
-            color: #555;
-        }
-        .model a {
-            text-decoration: none;
-            border: 2px solid #000;
-            padding: 10px 20px;
-            color: #000;
-            font-size: 14px;
-            display: inline-block;
-            border-radius: 25px;
-        }
-        /* Review */
-        .reviews {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-        .review {
-            width: 60%;
-            text-align: left;
-        }
-        .review h2 {
-            font-size: 16px;
-            margin: 10px 0;
-            font-weight: normal;
-        }
-        .review p {
-            font-size: 14px;
-            color: #555;
-            margin: 10px 0;
-        }
-        /* Carousel */
-        .carousel {
-            position: relative;
-            overflow: hidden;
-            margin-top: 20px;
-        }
-
-        .carousel-images {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carousel-image {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-        }
-
-        .carousel-nav {
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            transform: translateY(-50%);
-        }
-
-        .carousel-button {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
-        /* Divider */
-        .custom-divider {
-        width: 80%;  
-        height: 1px; 
-        background-color: #ddd; 
-        margin: 20px auto;  
-        border: none;  
-        box-sizing: border-box;
-    }
-        /* Footer */
-        .footer {
-            text-align: center;
-            font-size: 12px;
-            color: #777;
-            margin-top: 30px;
-        }
-    </style>
 </head>
-<body>
-    <div class="email-container">
-        <div class="logo">
-            <img src="https://placehold.co/150x100" alt="Logo" width="100">
-        </div>
-        <hr class="custom-divider">
-        <div class="hero">
-            <img src="https://i.postimg.cc/bdXym8kH/pchead.png" alt="Laptop">
-        </div>
-        <div class="headline">
-            <h1>A NEW WAY TO WORK</h1>
-            <p>Work smarter, faster, better<br>High-speed performance at your fingertips</p>
-        </div>
-        <div class="cta">
-            <a href="#">View details</a>
-        </div>
-        <hr class="custom-divider">
-        <div class="features">
-            <div>
-                <img src="https://i.postimg.cc/L4PnZ0zB/1.png" alt="Full HD Display">
-                <p>Full HD Display</p>
-            </div>
-            <div>
-                <img src="https://i.postimg.cc/Wb6z5FYd/2.png" alt="36GB RAM">
-                <p>Memory 36GB RAM</p>
-            </div>
-            <div>
-                <img src="https://i.postimg.cc/zX13wS7m/3.png" alt="Processor Gen 12th">
-                <p>Processor Gen 12th</p>
-            </div>
-            <div>
-                <img src="https://i.postimg.cc/FHrR8rwD/4.png" alt="22 Hours Battery">
-                <p>Up to 22 Hours Battery Life</p>
-            </div>
-        </div>
-        <hr class="custom-divider">
-        <div class="models">
-            <div class="model">
-                <h2>Model XX PRO</h2>
-                <p>Dominate tasks, games, and multimedia with high-speed processors and premium graphics</p>
-                <a href="#">Buy Now</a>
-            </div>
-            <div class="model">
-                <h2>Model Lite</h2>
-                <p>Effortlessly sleek: Slim, lightweight design meets powerful performance.</p>
-                <a href="#">Buy Now</a>
-            </div>
-        </div>
-        <!-- Carousel -->
-        <div class="carousel">
-            <div class="carousel-images">
-                <img class="carousel-image" src="https://via.placeholder.com/600x300/007BFF/ffffff?text=Slide+1" alt="Slide 1">
-                <img class="carousel-image" src="https://via.placeholder.com/600x300/ff5722/ffffff?text=Slide+2" alt="Slide 2">
-                <img class="carousel-image" src="https://via.placeholder.com/600x300/4caf50/ffffff?text=Slide+3" alt="Slide 3">
-            </div>
-            <div class="carousel-nav">
-                <button class="carousel-button" onclick="moveCarousel(-1)">&#10094;</button>
-                <button class="carousel-button" onclick="moveCarousel(1)">&#10095;</button>
-            </div>
-        </div>
-        <div class="reviews">
-            <h2>Customer Reviews</h2>
-        <div class="review">
-            <h2>First Name Last Name ★★★★★</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        </div>
-        <hr class="custom-divider">
-        <div class="footer">
-    If you no longer wish to receive emails from us, <a href="https://www.example.com/unsubscribe" style="color: #007BFF;">click here to unsubscribe</a>.
-    Your Company Name | Address: 1234 Street, City, Country | Phone: +123 456 7890
-     2024 Your Company Name. All rights reserved.
-    Follow us on:
-        <a href="https://www.facebook.com/yourpage" style="color: #007BFF;">Facebook</a> |
-        <a href="https://www.twitter.com/yourpage" style="color: #007BFF;">Twitter</a> |
-        <a href="https://www.instagram.com/yourpage" style="color: #007BFF;">Instagram</a>
-        </div>
-    </div>
-    <script>
-        // Carousel functionality
-        let currentSlide = 0;
-
-        function moveCarousel(direction) {
-            const slides = document.querySelectorAll('.carousel-image');
-            const totalSlides = slides.length;
-            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-            const carousel = document.querySelector('.carousel-images');
-            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-        }
-    </script>
+<body style="margin: 0; padding: 0; background-color: #fff; font-family: Arial, sans-serif;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #fff; margin: 0; padding: 0;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" border="0" style="width: 100%; max-width: 600px;">
+                    <!-- Logo -->
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                            <img src="https://placehold.co/150x100" alt="Logo" width="100" style="display: block;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-bottom: 1px solid #ddd;"></td>
+                    </tr>
+                    <!-- Hero Image -->
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                            <img src="https://i.postimg.cc/bdXym8kH/pchead.png" alt="Laptop" style="width: 100%; max-width: 400px; display: block;">
+                        </td>
+                    </tr>
+                    <!-- Headline -->
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                            <h1 style="font-size: 24px; margin: 0;">A NEW WAY TO WORK</h1>
+                            <p style="font-size: 16px; color: #555; margin: 10px 0;">Work smarter, faster, better<br>High-speed performance at your fingertips</p>
+                        </td>
+                    </tr>
+                    <!-- CTA -->
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                            <a href="#" style="text-decoration: none; border: 2px solid #000; padding: 10px 20px; color: #000; font-size: 14px; border-radius: 25px; display: inline-block;">View Details</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-bottom: 1px solid #ddd;"></td>
+                    </tr>
+                    <!-- Features -->
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" style="padding: 10px;">
+                                        <img src="https://i.postimg.cc/L4PnZ0zB/1.png" alt="Full HD Display" width="40" style="display: block;">
+                                        <p style="font-size: 12px; color: #555; margin: 10px 0;">Full HD Display</p>
+                                    </td>
+                                    <td align="center" style="padding: 10px;">
+                                        <img src="https://i.postimg.cc/Wb6z5FYd/2.png" alt="36GB RAM" width="40" style="display: block;">
+                                        <p style="font-size: 12px; color: #555; margin: 10px 0;">Memory 36GB RAM</p>
+                                    </td>
+                                    <td align="center" style="padding: 10px;">
+                                        <img src="https://i.postimg.cc/zX13wS7m/3.png" alt="Processor Gen 12th" width="40" style="display: block;">
+                                        <p style="font-size: 12px; color: #555; margin: 10px 0;">Processor Gen 12th</p>
+                                    </td>
+                                    <td align="center" style="padding: 10px;">
+                                        <img src="https://i.postimg.cc/FHrR8rwD/4.png" alt="22 Hours Battery" width="40" style="display: block;">
+                                        <p style="font-size: 12px; color: #555; margin: 10px 0;">Up to 22 Hours Battery Life</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-bottom: 1px solid #ddd;"></td>
+                    </tr>
+                    <!-- Models -->
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" width="50%" style="padding: 10px;">
+                                        <h2 style="font-size: 18px; margin: 10px 0;">Model XX PRO</h2>
+                                        <p style="font-size: 14px; color: #555; margin: 10px 0;">Dominate tasks, games, and multimedia with high-speed processors and premium graphics</p>
+                                        <a href="#" style="text-decoration: none; border: 2px solid #000; padding: 10px 20px; color: #000; font-size: 14px; border-radius: 25px; display: inline-block;">Buy Now</a>
+                                    </td>
+                                    <td align="center" width="50%" style="padding: 10px;">
+                                        <h2 style="font-size: 18px; margin: 10px 0;">Model Lite</h2>
+                                        <p style="font-size: 14px; color: #555; margin: 10px 0;">Effortlessly sleek: Slim, lightweight design meets powerful performance.</p>
+                                        <a href="#" style="text-decoration: none; border: 2px solid #000; padding: 10px 20px; color: #000; font-size: 14px; border-radius: 25px; display: inline-block;">Buy Now</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- Grid of Products -->
+                    <tr>
+                        <td align="center" style="padding: 20px;">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" style="padding: 10px;" width="50%">
+                                        <img src="https://via.placeholder.com/250x150/007BFF/ffffff?text=Product+1" alt="Product 1" style="width: 100%; max-width: 250px;">
+                                        <h3 style="font-size: 16px; margin: 10px 0;">Product 1</h3>
+                                        <p style="font-size: 14px; color: #555;">Description of Product 1</p>
+                                    </td>
+                                    <td align="center" style="padding: 10px;" width="50%">
+                                        <img src="https://via.placeholder.com/250x150/FF5722/ffffff?text=Product+2" alt="Product 2" style="width: 100%; max-width: 250px;">
+                                        <h3 style="font-size: 16px; margin: 10px 0;">Product 2</h3>
+                                        <p style="font-size: 14px; color: #555;">Description of Product 2</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding: 10px;" width="50%">
+                                        <img src="https://via.placeholder.com/250x150/4CAF50/ffffff?text=Product+3" alt="Product 3" style="width: 100%; max-width: 250px;">
+                                        <h3 style="font-size: 16px; margin: 10px 0;">Product 3</h3>
+                                        <p style="font-size: 14px; color: #555;">Description of Product 3</p>
+                                    </td>
+                                    <td align="center" style="padding: 10px;" width="50%">
+                                        <img src="https://via.placeholder.com/250x150/FFC107/ffffff?text=Product+4" alt="Product 4" style="width: 100%; max-width: 250px;">
+                                        <h3 style="font-size: 16px; margin: 10px 0;">Product 4</h3>
+                                        <p style="font-size: 14px; color: #555;">Description of Product 4</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="border-bottom: 1px solid #ddd;"></td>
+                    </tr>
+                    <!-- Footer -->
+                    <tr>
+                        <td align="center" style="padding: 20px; font-size: 12px; color: #777;">
+                            If you no longer wish to receive emails from us, <a href="https://www.example.com/unsubscribe" style="color: #007BFF; text-decoration: none;">click here to unsubscribe</a>.<br>
+                            Your Company Name | Address: 1234 Street, City, Country | Phone: +123 456 7890<br>
+                            &copy; 2024 Your Company Name. All rights reserved.<br>
+                            Follow us on: <a href="https://www.facebook.com/yourpage" style="color: #007BFF; text-decoration: none;">Facebook</a> | <a href="https://www.twitter.com/yourpage" style="color: #007BFF; text-decoration: none;">Twitter</a> | <a href="https://www.instagram.com/yourpage" style="color: #007BFF; text-decoration: none;">Instagram</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
